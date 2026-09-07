@@ -72,6 +72,8 @@ nav {
   text-align: center;
   margin-top: 50px;
   font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  max-width: 600px;
 }
 
 .blue {
@@ -83,18 +85,21 @@ nav {
   color: #555;
   margin-top: 20px;
   font-family: 'Arial', sans-serif;
+
 }
 
 .header__form {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 48px;
 }
 
 form {
   display: flex;
   align-items: center;
-  width: 450px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 999px;
@@ -102,7 +107,8 @@ form {
 
 input {
   flex: 1;
-  padding: 12px;
+  padding: 12px 24px;
+  border-radius: 999px;
   border: none;
   outline: none;
   font-size: 16px;
@@ -120,4 +126,46 @@ button {
 
 button:hover {
   background-color: #5010cc;
+}
+
+.header__customers--title {
+ text-align: center;
+ font-family: 'Arial', sans-serif;
+ font-weight: bold;
+ color: #666569;
+ margin-top: 50px;
+}
+
+.header__customers {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 48px;
+  gap: 75 px;
+}
+
+.header__img {
+  display: block;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.header__contect--left {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header__description h1 {
+  max-width: 500px;
 }
