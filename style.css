@@ -85,7 +85,6 @@ nav {
   color: #555;
   margin-top: 20px;
   font-family: 'Arial', sans-serif;
-
 }
 
 .header__form {
@@ -134,13 +133,13 @@ button:hover {
  font-weight: bold;
  color: #666569;
  margin-top: 50px;
+ font-size: 12px;
 }
 
 .header__customers {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  height: 48px;
+  margin-top: 8px;
+  height: 32px;
   gap: 75 px;
 }
 
@@ -168,4 +167,10 @@ button:hover {
 
 .header__description h1 {
   max-width: 500px;
+}
+
+.feature__row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
