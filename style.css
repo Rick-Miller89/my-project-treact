@@ -187,7 +187,6 @@ button:hover {
 
 #features {
   padding: 100px 0;
-  background-color: #f9f9f9;
 }
 
 .feature__row {
@@ -285,7 +284,7 @@ button:hover {
 .quality__row {
   display: flex;
   align-items: center;
-  padding: 0 75px;
+  padding: 0 60px;
 }
 
 .quality__text {
@@ -295,5 +294,31 @@ button:hover {
 .quality__tag {
   color: #5010cc;
   font-weight: bold;
-  letter-spacing: 2.5;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+.quality__img--wrapper {
+  width: 50%;
+  margin: 0;
+}
+
+.quality__img {
+  width: 100%;
+}
+
+.quality__description {
+  max-width: 400px;
+  font-size: 48px;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.quality__para {
+  max-width: 500px;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #928989;
 }
