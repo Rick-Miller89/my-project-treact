@@ -355,12 +355,11 @@ button:hover {
 
 .steps__row {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .steps__img--wrapper {
-  width: 90%;
+  width: 50%;
 }
 
 .steps__img {
@@ -369,10 +368,7 @@ button:hover {
 
 .steps__description {
   width: 50%;
-  padding: 48px 0;
-  padding-left: 75px;
-  margin-bottom: 370px;
-
+  padding-left: 48px;
 }
 
 .steps__tag {
@@ -385,7 +381,8 @@ button:hover {
 .steps__text {
   width: 100%;
   font-size: 28px;
-  padding-right: 64px;
-  display: flex;
-  flex-direction: row;
+}
+
+.steps__text h2 {
+  max-width: 400px;
 }
