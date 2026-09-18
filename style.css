@@ -593,6 +593,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
  }
 
  .pricing__description {
@@ -625,12 +626,47 @@ button:hover {
   line-height: 1.5;
   max-width: 600px;
   margin-left: 48px;
+  margin-bottom: 48px;
  }
+
 .pricing__plans {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
+
  .pricing__plan {
   border: 1px solid #ddd;
-  width: 30%;
-  padding: 32px;
+  padding: 32px 48px;
  }
+
+ .plan__top {
+  margin-bottom: 32px;
+ }
+
+.plan__name {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.plan__price {
+  font-size: 42px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+
+.plan__time {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #767272;
+  letter-spacing: 1px;
+}
+
+.plan__target {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
