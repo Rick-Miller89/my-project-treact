@@ -586,6 +586,7 @@ button:hover {
  .pricing__container {
   max-width: 1200px;
   width: 100%;
+  padding: 80px 0;
   margin: 0 auto;
  }
 
@@ -621,7 +622,7 @@ button:hover {
  .pricing__para {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  color:#504c4c;
+  color: #928989;
   text-align: center;
   line-height: 1.5;
   max-width: 600px;
@@ -630,15 +631,22 @@ button:hover {
  }
 
 .pricing__plans {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
+  margin-top: 32px;
 }
 
  .pricing__plan {
   border: 1px solid #ddd;
-  padding: 32px 48px;
+  border-radius: 10px;
+  width: 50%;
+  padding: 32px 0;
+  text-align: center;
+  margin-left: 42px;
  }
 
  .plan__top {
@@ -669,4 +677,76 @@ button:hover {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+}
+
+.plan__feature {
+  color: #5d5858;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 32px;
+}
+
+.plan__top {
+  border-bottom: 1px solid #ddd;
+  padding: 22px;
+  padding-left: 32x;
+  padding-right: 32px;
+  padding-top: 12px;
+}
+
+.plan__middle {
+  border-bottom: 1px solid #ddd;
+  padding: 24px;
+  padding-left: 32x;
+  padding-right: 32px;
+  padding-top: 16px;
+}
+
+.plan__btn {
+  margin-top: 36px;
+  padding: 16px 62px;
+}
+
+/*TESTIMONIALS*/
+
+.test__container {
+  padding: 80px 0;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.test__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.test__img {
+  width: 55%;
+  margin-right: 32px;
+}
+
+.test__pic {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.test__description {
+  margin-top: 100px;
+  padding: 48px;
+}
+
+.test__tag {
+  color: #6415ff;
+  padding: 32px 0;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.test__title {
+  font-size: 48px;
+  align-items: center;
 }
