@@ -133,6 +133,12 @@ button:hover {
   background-color: #5010cc;
 }
 
+
+.test__button:hover {
+  background-color: #ddd0d0 !important; 
+}
+
+
 .header__customers--title {
  text-align: center;
  font-family: 'Arial', sans-serif;
@@ -801,30 +807,99 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-left: 48px;
+  margin-left: 200px;
+  cursor: pointer;
+  transition: all 300ms ease;
 }
 
 .test__button--left {
   content: "←";
   font-size: 24px;
-  background-color: #f1e2e2;
-  border: 1px #ddd;
+  background-color: #ddd;
+  border: none;
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  color: #5010cc;
+  color: #6415ff;
   padding: 0;
-
 }
 
 .test__button--right {
   content: "→";
   font-size: 24px;
-  background-color: #f1e2e2;
-  border: 1px #ddd;
+  background-color: #ddd;
+  border: none;
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  color: #5010cc;
+  color: #6415ff;
   padding: 0;
+}
+
+/* START */
+
+#start {
+  margin-top: 78px;
+}
+
+.start__container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: rgb(100, 21, 255);
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.start__row {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0 32px;
+  margin-top: 40px;
+}
+
+.start__title {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: white;
+  letter-spacing: .25px;
+  margin-bottom: 36px;
+  margin-right: 150px;
+  width: 50%;
+  line-height: 42px;
+}
+
+.start__buttons {
+  margin-bottom: 16px;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 22px 32px;
+}
+
+.start__button--primary {
+  background-color: #f56565;
+  margin-right: 30px;
+}
+
+.start__button--primary:hover {
+  background-color: rgb(227, 75, 105);
+  transition: all 300ms ease-in;
+}
+
+.start__button--secondary {
+  border: 1px solid whitesmoke;
+}
+
+.start__button--secondary:hover {
+  background-color: white !important;
+  color: #5010cc;
+  transition: all 300ms ease-in;
 }
