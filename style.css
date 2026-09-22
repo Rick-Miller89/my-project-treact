@@ -850,7 +850,7 @@ button:hover {
   background-color: rgb(100, 21, 255);
   border-radius: 10px;
   margin-bottom: 50px;
-}
+  }
 
 .start__row {
   height: 100%;
@@ -902,4 +902,9 @@ button:hover {
   background-color: white !important;
   color: #5010cc;
   transition: all 300ms ease-in;
+}
+
+footer {
+  background-color: rgb(100, 21, 255);
+  padding: 80px 60px;
 }
