@@ -382,8 +382,26 @@ button:hover {
 }
 
 .steps__img--wrapper {
+  position: relative;
   width: 75%;
   padding-right: 30px;
+}
+
+.steps__img--wrapper::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 75px;
+  left: 40%;
+  transform: translateX(-50%);
+  bottom: -50%;
+  background-image: radial-gradient(#b5abc9, 2px, transparent 2px);
+  background-size: 10px 10px;
+  z-index: -1;
+}
+
+.steps__grid {
+  position: absolute;
 }
 
 .steps__img {
@@ -657,34 +675,6 @@ button:hover {
   background-color: white;
  }
 
- .plan__stripe {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 10px;
-  border: 1px solid black;
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
- }
-
- .pricing__plan:nth-child(1) .plan__stripe, .plan__btn {
-   background: linear-gradient(115deg, rgb(89, 234, 41) 0%, rgb(104, 82, 82) 100%);
- }
-
-  .pricing__plan:nth-child(2), .plan__btn .plan__time .plan__feature {
-  background: linear-gradient(135deg,rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
-  color: white;
-  background-color: rgb(240, 233, 233);
- }
-
-
- .pricing__plan:nth-child(3) .pricing__plan:nth-child(3), .plan__stripe,
- .plan__btn {
-   background: linear-gradient(115deg, rgb(115, 204, 51) 0%, rgb(254, 178, 178) 100%);
- }
-
-
  .plan__top {
   margin-bottom: 32px;
  }
@@ -741,7 +731,60 @@ button:hover {
 .plan__btn {
   margin-top: 36px;
   padding: 16px 62px;
+  transition: 0.2 ease;
 }
+
+.plan__stripe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 10px;
+  border: 1px solid black;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+ }
+
+ .pricing__plan:nth-child(1) .plan__stripe,
+ .pricing__plan:nth-child(1) .plan__btn {
+  background: linear-gradient(115deg, rgb(114, 121, 112) 0%, rgb(53, 151, 64) 100%);
+ }
+
+  .pricing__plan:nth-child(2) {
+    background: linear-gradient(135deg, #454bb5, #667eea);
+    color: white;
+  }
+
+  .pricing__plan:nth-child(2) .plan__stripe {
+     background: linear-gradient(135deg, #454bb5, #667eea);
+  }
+
+  .pricing__plan:nth-child(2) .plan__time {
+    color: white;
+  }
+  
+  .pricing__plan:nth-child(2) .plan__feature {
+    color: white;
+  }
+
+  .pricing__plan:nth-child(2) .plan__btn {
+    background: white !important;
+    color: #5010cc;
+  }
+ 
+
+
+ .pricing__plan:nth-child(3) .pricing__plan:nth-child(3), .plan__stripe,
+ .plan__btn {
+   background: linear-gradient(115deg, rgb(115, 204, 51) 0%, rgb(254, 178, 178) 100%);
+   background-color: white;
+ }
+
+ .plan__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+ }
+
 
 /*TESTIMONIALS*/
 
