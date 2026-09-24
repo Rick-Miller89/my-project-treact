@@ -387,25 +387,21 @@ button:hover {
   padding-right: 30px;
 }
 
-.steps__img--wrapper::after {
-  content: "";
-  position: absolute;
-  width: 150px;
-  height: 75px;
-  left: 40%;
-  transform: translateX(-50%);
-  bottom: -50%;
-  background-image: radial-gradient(#b5abc9, 2px, transparent 2px);
-  background-size: 10px 10px;
-  z-index: -1;
-}
-
 .steps__grid {
   position: absolute;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  opacity: 0.5;
+  z-index: 0;
+  bottom: 250px;
+  transform: translateX(120%);
 }
 
 .steps__img {
   width: 90%;
+  position: relative;
+  z-index: 1;
 }
 
 .steps__description {
@@ -434,14 +430,15 @@ button:hover {
 }
 
 .steps__list {
-  margin-top: 48px;
   display: flex;
   flex-direction: column;
+
 }
 
 .step {
   display: flex;
   flex-direction: column;
+  margin-bottom: -40px;
 }
 
 .step__number {
