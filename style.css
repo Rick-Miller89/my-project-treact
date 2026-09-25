@@ -1114,3 +1114,26 @@ footer {
   opacity: .2;
   margin-top: 60px;
 }
+
+.btn__menu {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+/* MEDIA */
+
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+  .btn__menu {
+    display: block;
+    color: white;
+  }
+}
+
+
+
