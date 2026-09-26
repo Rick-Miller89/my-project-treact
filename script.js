@@ -1,9 +1,9 @@
 console.log("JavaScript is connected!");
 
 function openMenu() {
-  document.querySelector(".menu").style.display = "block";
+  document.querySelector(".menu").classList.add("menu--open");
 }
 
 function closeMenu() {
-  document.querySelector(".menu").style.display = "none";
+  document.querySelector(".menu").classList.remove("menu--open");
 }
