@@ -297,7 +297,7 @@ button:hover {
 }
 
 .quality__container {
-  max-width: 1200px;
+  max-width: 1280px;
   width: 90%;
   margin: 0 auto;
 }
@@ -673,7 +673,7 @@ button:hover {
   position: relative;
   border: 1px solid #ddd;
   border-radius: 10px;
-  width: 100%;
+  width: 90%;
   padding: 32px 0;
   text-align: center;
   margin-left: 42px;
@@ -793,8 +793,8 @@ button:hover {
 
 .test__container {
   padding: 80px 0;
-  max-width: 1200px;
-  width: 100%;
+  max-width: 1280px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -980,6 +980,7 @@ button:hover {
   font-size: 18px;
   font-weight: bold;
   padding: 22px 32px;
+  white-space: nowrap;
 }
 
 .start__button--primary {
@@ -1003,7 +1004,6 @@ button:hover {
 }
 
 footer {
-  margin: 0 auto;
   width: 100%;
   background-color: rgb(100, 21, 255);
   padding: 80px 60px;
@@ -1220,6 +1220,9 @@ footer {
 @media (max-width: 768px) {
   .steps__row {
     flex-direction: column;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
   }
     .steps__img {
     width: 100%;
@@ -1232,15 +1235,23 @@ footer {
   }
   .steps__description {
     width: 100%;
-    padding-left: 50px;
+    align-items: center;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-top: 100px;
   }
   .step__number {
-    transform: translateX(0);
-    transform: translateY(-32px);
+    transform: translateY(-60px);
+    margin-bottom: 64px;
+    margin: auto;
+    text-align: center;
   }
   .steps__grid {
     display: none;
+  }
+  .step {
+    margin-top: 50px;
   }
 }
 
@@ -1248,23 +1259,49 @@ footer {
   .quality__row {
     flex-direction: column;
     margin: auto;
-    max-width: 1280px;
+    width: 100%;
+    padding: 0 24px;
   }
+  .quality__text {
+    width: 100%;
+  }
+
+.quality__description {
+  width: 100%;
+  max-width: none;
+  margin-bottom: 28px;
+ }
+ .quality__para {
+  width: 100%;
+  margin-bottom: 28px;
+ }
+ .quality__img--wrapper {
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+ }
 }
 
 
 @media (max-width: 768px) {
+  .value {
+    width: 100%;
+  }
   .values__row {
    flex-direction: column;
    width: 100%;
    align-items: center;
+  }
+  .values__list {
+    flex-direction: column;
+    gap: 32px;
   }
   .value__text {
       width: 100%;
       flex-direction: column;
   }
   .values__description {
-    width: 50%;
+    width: 90%;
   }
   .values__img {
     width: 100%;
@@ -1277,6 +1314,10 @@ footer {
   }
   .pricing__plans {
     flex-direction: column;
+    transform: translateX(-20px);
+  }
+  .pricing__para {
+    transform: translateX(-20px);
   }
 }
 
@@ -1303,6 +1344,17 @@ footer {
   }
   .start__blob--1, .start__blob--2 {
     display: none;
+  }
+
+  @media (max-width: 768px) {
+    .test__row {
+      max-width: 1280px;
+      width: 100%;
+    }
+    .test__buttons {
+      margin: auto;
+      width: 100%;
+    }
   }
 
   @media (max-width: 768px) {
