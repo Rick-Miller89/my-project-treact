@@ -1220,17 +1220,15 @@ footer {
 @media (max-width: 768px) {
   .steps__row {
     flex-direction: column;
-    margin: auto;
-    width: 100%;
-    max-width: 1280px;
+    align-items: center;
   }
     .steps__img {
-    width: 100%;
+    width: 90%;
     display: block;
     margin: 0 auto;
   }
   .steps__img--wrapper {
-    width: 100%;
+    width: 80%;
     padding-right: 0;
   }
   .steps__description {
@@ -1279,6 +1277,10 @@ footer {
   width: 100%;
   margin: auto;
   margin-top: 40px;
+ }
+ .quality__img {
+  width: 100%;
+  max-width: 1280px;
  }
  .quality__tag {
   text-align: center;
@@ -1431,8 +1433,11 @@ footer {
       width: 80%;
       padding-right: 0;
     }
+    .steps__img {
+      width: 90%;
+    }
     .steps__description {
-      width: 55%;
+      width: 80%;
       text-align: center;
       padding-left: 0;
       padding-right: 0;
@@ -1440,6 +1445,9 @@ footer {
     .step__para {
       margin: auto;
       margin-top: 24px;
+    }
+    .steps__text h2 {
+      margin: auto;
     }
   }
 
